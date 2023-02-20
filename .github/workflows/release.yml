@@ -1,0 +1,108 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build application
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: "☁️ checkout repository"
+        uses: actions/checkout@v2
+
+      - name: "🔧 setup node"
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 16
+
+      - name: "🔧 install npm@latest"
+        run: npm i -g npm@latest
+
+      - name: "📦 install dependencies"
+        uses: bahmutov/npm-install@v1
+
+      - name: "🚀 static app"
+        run: |
+          npm run build
+          npm run export
+
+      - name: "📂 production artifacts"
+        uses: actions/upload-artifact@v2
+        with:
+          name: out
+          path: out
+
+  release:
+    environment:
+      name: production
+      url: https://github.com/${{ github.repository }}/releases/tag/${{ steps.semantic-release.outputs.release-tag }}
+    name: Semantic release
+    needs:
+      - build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: "☁️ checkout repository"
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: "📂 download build artifacts"
+        uses: actions/download-artifact@v2
+        with:
+          name: out
+          path: out
+
+      - name: "🚀 release"
+        id: semantic-release
+        uses: open-sauced/release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy:
+    name: Deploy to static
+    needs:
+      - build
+      - release
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: "☁️ checkout repository"
+        uses: actions/checkout@v2
+
+      - name: "📂 download artifacts"
+        uses: actions/download-artifact@v2
+        with:
+          name: out
+          path: /home/runner/out
+
+      - name: "📂 copy artifacts"
+        run: |
+          cp -R /home/runner/out .
+          ls -lahH ./out
+
+      - name: "🚀 deploy static"
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          commit_message: ${{ github.event.head_commit.message }}
+          enable_jekyll: false
+
+  cleanup:
+    name: Cleanup actions
+    needs:
+      - release
+      - deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: "♻️ remove build artifacts"
+        uses: geekyeggo/delete-artifact@v1
+        with:
+          name: |
+            out
