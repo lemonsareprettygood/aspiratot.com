@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.2.1](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.2.0...v1.2.1) (2023-02-21)
+
+
+### 🐛 Bug Fixes
+
+* correct content background ([1a9776a](https://github.com/lemonsareprettygood/aspiratot.com/commit/1a9776a9da5810e2977dc1a93e3fe8f14d27f2b9))
+
 ## [1.2.0](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.1.0...v1.2.0) (2023-02-21)
 
 
