@@ -18,7 +18,7 @@ export default function Home() {
             </Head>
             <div className="min-h-screen flex flex-col">
                 <Header/>
-                <main className="flex-1 bg-indigo-50 p-2 bg-black">
+                <main className="flex-1 p-2 bg-black">
                     <div className="mb-20 text-center">
                         <Image src={Logo} alt={"Logo"} className="inline-block" width={500}/>
                     </div>
