@@ -5,6 +5,18 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.3.0](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.2.1...v1.3.0) (2023-02-21)
+
+
+### 🍕 Features
+
+* add google contact form embed ([d70f105](https://github.com/lemonsareprettygood/aspiratot.com/commit/d70f105ef5bc07d3188fd0218e0be5d43b666a20))
+
+
+### 🐛 Bug Fixes
+
+* correct iframe props ([e3ca496](https://github.com/lemonsareprettygood/aspiratot.com/commit/e3ca496b73814a4ee94b29ce6c8bff687c8129f0))
+
 ### [1.2.1](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.2.0...v1.2.1) (2023-02-21)
 
 
