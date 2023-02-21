@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.3.1](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.3.0...v1.3.1) (2023-02-21)
+
+
+### 🐛 Bug Fixes
+
+* correct typo in google form ([2aa01c7](https://github.com/lemonsareprettygood/aspiratot.com/commit/2aa01c741abb3773403f3fa59c6dd747b7fec6c4))
+
 ## [1.3.0](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.2.1...v1.3.0) (2023-02-21)
 
 
