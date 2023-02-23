@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.6.0](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.5.0...v1.6.0) (2023-02-23)
+
+
+### 🍕 Features
+
+* add header google form button ([e57af54](https://github.com/lemonsareprettygood/aspiratot.com/commit/e57af54b93b4a097b430e9c432db595d96e3dab0))
+
 ## [1.5.0](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.4.1...v1.5.0) (2023-02-23)
 
 
