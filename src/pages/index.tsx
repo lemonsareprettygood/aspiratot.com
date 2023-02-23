@@ -13,7 +13,7 @@ export default function Home() {
                 <Image src={Logo} alt={"Logo"} className="inline-block" width={500}/>
 
                 <div>
-                    <Link className="bg-amber-700 p-5 rounded-2xl text-amber-50" href="/programare">Programeaza o
+                    <Link className="bg-amber-700 p-5 rounded-2xl text-amber-50 text-lg" href="/programare">Programeaza o
                         curatare</Link>
                 </div>
             </div>
