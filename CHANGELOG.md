@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.6.1](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.6.0...v1.6.1) (2023-02-23)
+
+
+### 🐛 Bug Fixes
+
+* make footer text bigger ([48760b3](https://github.com/lemonsareprettygood/aspiratot.com/commit/48760b3d55d26ef07e01f2594aab49f9540abb91))
+
 ## [1.6.0](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.5.0...v1.6.0) (2023-02-23)
 
 
