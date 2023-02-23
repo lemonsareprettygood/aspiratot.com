@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.5.0](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.4.1...v1.5.0) (2023-02-23)
+
+
+### 🍕 Features
+
+* add back to home button and header ([8cba5e4](https://github.com/lemonsareprettygood/aspiratot.com/commit/8cba5e437f8dde7c7414280b2cec2e2a3f3f4c74))
+
 ### [1.4.1](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.4.0...v1.4.1) (2023-02-23)
 
 
