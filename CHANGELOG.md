@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.4.0](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.3.1...v1.4.0) (2023-02-23)
+
+
+### 🍕 Features
+
+* add layout wrapper ([118f1b0](https://github.com/lemonsareprettygood/aspiratot.com/commit/118f1b0f25dab3911c155affc396553bab0d2195))
+
 ### [1.3.1](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.3.0...v1.3.1) (2023-02-21)
 
 
