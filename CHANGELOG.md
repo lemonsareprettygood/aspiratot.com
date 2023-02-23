@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.7.0](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.6.1...v1.7.0) (2023-02-23)
+
+
+### 🍕 Features
+
+* add terms oage ([751fee0](https://github.com/lemonsareprettygood/aspiratot.com/commit/751fee06e7bb8631ea30ec381964cac0d9dc2eab))
+
 ### [1.6.1](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.6.0...v1.6.1) (2023-02-23)
 
 
