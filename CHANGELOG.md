@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.4.1](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.4.0...v1.4.1) (2023-02-23)
+
+
+### 🐛 Bug Fixes
+
+* correct google form background ([2a55a9b](https://github.com/lemonsareprettygood/aspiratot.com/commit/2a55a9ba1927606fab173199f600719b401da74d))
+
 ## [1.4.0](https://github.com/lemonsareprettygood/aspiratot.com/compare/v1.3.1...v1.4.0) (2023-02-23)
 
 
